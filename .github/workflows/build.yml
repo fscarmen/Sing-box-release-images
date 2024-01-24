@@ -50,12 +50,12 @@ jobs:
             DEV_NEXT_RENEW=1
           fi
 
-          if [ "$MAIN_NEXT_NOW" != "$MAIN_NEXT_NEW" ]; then
+          if [ "$MAIN_NEXT_RENEW" == "1" ]; then
             echo "main_next_now=$MAIN_NEXT_NOW" >> $GITHUB_OUTPUT
             echo "main_next_new=$MAIN_NEXT_NEW" >> $GITHUB_OUTPUT
             echo "main_next_renew=$MAIN_NEXT_RENEW" >> $GITHUB_OUTPUT
           fi
-          if [ "$DEV_NEXT_NOW" != "$DEV_NEXT_NEW" ]; then
+          if [ "$DEV_NEXT_RENEW" == "1" ]; then
             echo "dev_next_now=$DEV_NEXT_NOW" >> $GITHUB_OUTPUT
             echo "dev_next_new=$DEV_NEXT_NEW" >> $GITHUB_OUTPUT
             echo "dev_next_renew=$DEV_NEXT_RENEW" >> $GITHUB_OUTPUT
