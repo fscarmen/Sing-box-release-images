@@ -199,7 +199,7 @@ jobs:
 
       - name: Build main-next releases
         if: ${{ env.VERSION != '' }}
-        uses: fscarmen/go-release-action@v1.0.0
+        uses: wangyoucao577/go-release-action@v1.4.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 你的 GITHUB_TOKEN 用于将版本上传到 Github Release。
           goos: ${{ matrix.goos }} # 运行程序的操作系统
@@ -303,7 +303,7 @@ jobs:
 
       - name: Build dev-next releases
         if: ${{ env.VERSION != '' }}
-        uses: fscarmen/go-release-action@v1.0.0
+        uses: wangyoucao577/go-release-action@v1.4.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 你的 GITHUB_TOKEN 用于将版本上传到 Github Release。
           goos: ${{ matrix.goos }} # 运行程序的操作系统
