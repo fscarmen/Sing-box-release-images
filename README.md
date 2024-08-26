@@ -3,8 +3,8 @@
 - 本教程教您如何使用GitHub Actions 全自动构建Sing-Box Docker镜像
 
 ## 当前镜像版本：
- - ### **latest**: v1.9.4
- - ### **dev-next**: v1.10.0-beta.4
+ - ### **latest**: v1.9.3
+ - ### **dev-next**: v1.10.0-beta.3
 
 ## 教程
 ### 1. fork仓库
